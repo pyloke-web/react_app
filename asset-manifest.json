@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react_app/static/css/main.d8070026.css",
-    "main.js": "/react_app/static/js/main.dc88c5e4.js",
+    "main.css": "/react_app/static/css/main.11902e1b.css",
+    "main.js": "/react_app/static/js/main.0928bde4.js",
     "static/media/main_header.png": "/react_app/static/media/main_header.cfdd71eb8ee4127d40dd.png",
     "static/media/trainer4.jpg": "/react_app/static/media/trainer4.c0c84054934730eb658a.jpg",
     "static/media/trainer3.jpg": "/react_app/static/media/trainer3.e530422b62105640fc6d.jpg",
@@ -12,11 +12,11 @@
     "static/media/trainer6.jpg": "/react_app/static/media/trainer6.d060ff98bdc67ac8ddf3.jpg",
     "static/media/avatar5.jpg": "/react_app/static/media/avatar5.d25e9a28e32aa5201afa.jpg",
     "index.html": "/react_app/index.html",
-    "main.d8070026.css.map": "/react_app/static/css/main.d8070026.css.map",
-    "main.dc88c5e4.js.map": "/react_app/static/js/main.dc88c5e4.js.map"
+    "main.11902e1b.css.map": "/react_app/static/css/main.11902e1b.css.map",
+    "main.0928bde4.js.map": "/react_app/static/js/main.0928bde4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8070026.css",
-    "static/js/main.dc88c5e4.js"
+    "static/css/main.11902e1b.css",
+    "static/js/main.0928bde4.js"
   ]
 }
