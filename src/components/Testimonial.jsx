@@ -1,0 +1,49 @@
+import { useState } from "react"
+import SectionHead from "./SectionHead"
+import {ImQuotesLeft} from 'react-icons/im'
+import Card from "../UI/Card"
+import {IoIosArrowDropleftCircle, IoIosArrowDroprightCircle} from 'react-icons/io'
+import {testimonials} from '../data'
+
+const Testimonial = () => {
+        const[index,setIndex] = useState(0)
+        const {name, quote, job, avatar} = testimonials[index];
+
+        const prevTestimonialHandler = () => {
+            setIndex(prev => prev - 1);
+
+            if (index <= 0 ) {
+                setIndex(testimonials.length - 1);
+            }
+        }
+
+        const nextTestimonialHandler = () => {
+            setIndex(prev => prev + 1);
+
+            if (index >= testimonials.length - 1 ) {
+                setIndex(0);
+            }
+        }
+
+    return (
+    <div className="section testimonials">
+        <div className="conatiner testimonials__container">
+            <SectionHead icon = {<ImQuotesLeft/>} title="Testimonials" className="testimonial__head"></SectionHead>
+            <Card className={"testimonial"}> 
+                <div className="testimonial__avatar">
+                    <img src={avatar} alt={name} />
+                </div>
+                <p className="testimonial__quote"> {`"${quote}`} </p> 
+                <h5>{name}</h5>
+                <small className="testimonial__title">{job}</small>
+            </Card>
+            <div className="testimonials__btn-container">
+                <div className="button testimonials__btn" onClick={prevTestimonialHandler}> <IoIosArrowDropleftCircle/></div>
+                <div className="button testimonials__btn" onClick={nextTestimonialHandler}> <IoIosArrowDroprightCircle/></div>
+            </div>
+       </div>
+    </div>
+  )
+}
+
+export default Testimonial
